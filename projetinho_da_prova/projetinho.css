@@ -1,0 +1,148 @@
+.searchbar{
+    border-style: solid;
+    border-color: #0e2a58;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 1000px;
+
+    background-color: #c2c2c2;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #84a9e6;
+}
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu > ul > li{ /*Isso aqui ta arrumando o "botao" de departamentos */
+    position: relative;
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #0e2a58;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.menu ul li:hover{ /*isso arruma a cor dentro do botao de departamentos */
+    background-color: #2a5294;
+}
+
+.menu .submenu{ /*arruma o submenu dentro do menu*/
+    display: none;
+    position: relative;
+    left: 0%;
+    top: 100%;
+    background-color: #ecf0f1;
+    padding: 10px 0;
+    min-width: 140px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu .departamentos{
+    margin-top: 10px;
+}
+
+.menu .submenu li{
+    padding: 10px;
+    background-color: #bdc3c7;
+    color: black;
+    cursor: pointer;
+}
+
+.menu .submenu li:hover{
+    background-color: #95a5a6;
+}
+
+.menu > ul > li.departamentos:hover .submenu{
+    margin-top: 10px;
+    display: block;
+}
+.bloco-branco {
+
+    position: absolute; /* Torna o posicionamento absoluto */
+    top: 50%; /* Posiciona no centro verticalmente */
+    left: 50%; /* Posiciona no centro horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição exata para centralização */
+    display: flex; /* Alinha os filhos em linha (Produto 1, 2, 3) */
+    gap: 25%;
+    background-color: white; /* Cor de fundo branca */
+    padding-top: 5px; /* Adiciona espaço interno */
+    padding-bottom: 25px; /* Adiciona espaço interno para baixo */
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 15px; /* Deixa os cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve para o bloco */
+    justify-content: center; /* Centraliza os produtos horizontalmente */
+    width: 50%;
+    height: 260px;
+}
+
+/* Cada produto */
+.blocobranco .produto {
+    display: flex; /* Permite alinhamento interno no produto */
+    flex-direction: column; /* Alinha os itens de cima para baixo */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    padding: 10px; /* Espaçamento dentro de cada produto */
+    border: 1px solid #ddd; /* Borda fina ao redor do produto */
+    border-radius: 5px; /* Borda arredondada */
+    width: 150px; /* Largura fixa para cada produto */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Contêiner de imagem */
+.produto .imagem {
+    width: 150px; /* Tamanho do bloco de imagem */
+    height: 150px; /* Tamanho do bloco de imagem */
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+    overflow: hidden; /* Garante que a imagem não ultrapasse o bloco */
+    display: flex; /* Centraliza a imagem dentro do bloco */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagem dentro do bloco */
+.produto .imagem img {
+    width: 100%; /* Faz a imagem ocupar todo o espaço do bloco */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Garantia que a imagem se adapta ao bloco caso seja maior */
+}
+
+.carrinho{
+    margin-top: 10px;
+    margin-right: 10px;
+    position: absolute;
+    left: 97%;
+    top: 10px;
+}
+
+.produto1{
+    margin-left: 20%;
+    font-family: Verdana, sans-serif;
+}
+
+.produto2{]
+    margin-top: 10px;
+    margin-left: 0%;
+    font-family: Verdana, sans-serif;
+}
+
+.produto3{
+    margin-left: 0%;
+    font-family: Verdana, sans-serif;
+}

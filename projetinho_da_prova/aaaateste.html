@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Container no canto superior esquerdo */
+    .hover-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 50px;
+      width: 50px;
+      background-color: lightblue;
+      border: 2px solid aqua;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Adiciona um efeito ao passar o mouse */
+    .hover-container:hover {
+      background-color: #007BFF;
+    }
+
+    /* Menu oculto */
+    .tab-menu {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background-color: white;
+      border: 1px solid #007BFF;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Torna visível ao passar o mouse */
+    .hover-container:hover .tab-menu {
+      display: block;
+    }
+
+    /* Estilo das abas */
+    .tab-menu a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #007BFF;
+      border-bottom: 1px solid #ddd;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Remover borda inferior da última aba */
+    .tab-menu a:last-child {
+      border-bottom: none;
+    }
+
+    /* Efeito ao passar o mouse nas abas */
+    .tab-menu a:hover {
+      background-color: #007BFF;
+      color: white;
+    }
+  </style>
+  <title>Hover Abas</title>
+</head>
+<body>
+<div class="hover-container">
+  <!-- Menu oculto começa aqui -->
+  <div class="tab-menu">
+    <a href="#" id="tab-1">Aba 1</a>
+    <a href="#" id="tab-2">Aba 2</a>
+    <a href="#" id="tab-3">Aba 3</a>
+  </div>
+</div>
+</body>
+</html>
