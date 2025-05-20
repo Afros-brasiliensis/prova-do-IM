@@ -211,8 +211,7 @@ body {
 .container .parte1:hover,
 .container .parte2:hover,
 .container .parte3:hover {
-	transform: scale(1.03);
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.06);
 }
 
 
